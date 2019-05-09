@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:gravity="center"
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/search_edit_close"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@mipmap/ic_launcher" />
+
+        <EditText
+            android:paddingLeft="2dp"
+            android:id="@+id/search_edit_include"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/search_edit_close"
+            android:background="@drawable/shape_button_unselected"
+            android:hint="搜索学校..."
+            android:singleLine="true"
+            android:imeOptions="actionSearch"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+    </RelativeLayout>
+    <com.aaa.lsjdemo.demo.LinView
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/rl"
+        android:id="@+id/lin_view"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+</RelativeLayout>
